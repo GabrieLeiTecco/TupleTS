@@ -1,0 +1,29 @@
+// criar uma função que pede os dados de uma tupla
+// criar uma função que cria uma tupla e insere os dados nela
+// criar uma função que mostra a tupla
+
+function recebeTupla (){
+    let infos : [nome: string, idade: number, salario: number] = ['', 0, 0]
+    let a : string = String(prompt("Digite seu nome: "))
+    if (isNaN(a) == true){
+    let b : number = Number(prompt("Digite sua idade: "))
+    if (isNaN(b) == true){
+        alert("errado")
+    }else{
+    let c : number = Number(prompt("Digite seu salario: "))
+
+    if(isNaN(c) == true){
+        alert("errado")
+    }else{
+
+    infos = [a,b,c]
+    alert("Nome: "+infos[0]+"\n"+
+    "Idade: "+infos[1]+"\n"+
+    "Salario: "+infos[2])
+}
+}
+}else{
+    alert("errado")
+}
+}
+recebeTupla()
